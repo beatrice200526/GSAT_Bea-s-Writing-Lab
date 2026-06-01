@@ -58,7 +58,7 @@
                 </div>
               </div>
               <div class="exam-highlight-item">
-                <div class="exam-highlight-num">45</div>
+                <div class="exam-highlight-num">40</div>
                 <div>
                   <div class="exam-highlight-label">分鐘（建議作答時間）</div>
                   <div class="exam-highlight-desc">目標 14 分以上，至少寫一頁半</div>
@@ -88,8 +88,8 @@
           </div>
           <div class="feature-card" onclick="navigate('essays')">
             <div class="feature-icon">🏆</div>
-            <h3>高分範文賞析</h3>
-            <p>學測・指考歷年佳作，附寫作技巧解析與直通大考中心連結</p>
+            <h3>高分範文連結</h3>
+            <p>學測・指考歷年佳作，直通大考中心官方連結</p>
           </div>
           <div class="feature-card" onclick="navigateToTimer()">
             <div class="feature-icon">⏱</div>
@@ -100,6 +100,16 @@
             <div class="feature-icon">📚</div>
             <h3>文法句型攻略</h3>
             <p>學測高頻句型、轉折語、分詞構句等系統整理</p>
+          </div>
+          <div class="feature-card" onclick="navigate('writing-guide')">
+            <div class="feature-icon">✍️</div>
+            <h3>寫作解析</h3>
+            <p>歷年題目深度解析，拆解高分寫法與結構策略</p>
+          </div>
+          <div class="feature-card" onclick="navigate('flashcards')">
+            <div class="feature-icon">🃏</div>
+            <h3>閃卡練習</h3>
+            <p>單字、句型與替換詞閃卡，隨時複習強化記憶</p>
           </div>
         </div>
       </div>
@@ -405,6 +415,7 @@
       </div>
       <div class="modal-footer">
         <button class="btn-ghost" onclick="closeModal('practiceModal')">關閉</button>
+        <button class="btn-ghost" id="fsBtn" onclick="togglePracticeFullscreen()" title="全螢幕">⛶ 全螢幕</button>
       </div>
     </div>
   </div>

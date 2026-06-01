@@ -33,6 +33,17 @@ document.querySelectorAll('.nav-link').forEach(link => {
   });
 });
 
+// Fullscreen toggle for practice modal
+function togglePracticeFullscreen() {
+  const overlay = document.getElementById('practiceModal');
+  const modal   = overlay.querySelector('.practice-modal');
+  const btn     = document.getElementById('fsBtn');
+  const isFs    = modal.classList.toggle('fullscreen');
+  overlay.classList.toggle('fs-active', isFs);
+  btn.textContent = isFs ? '⊡ 還原' : '⛶ 全螢幕';
+  btn.title       = isFs ? '還原視窗' : '全螢幕';
+}
+
 // Mobile hamburger menu
 const menuBtn = document.getElementById('menuBtn');
 const navLinks = document.querySelector('.nav-links');
@@ -45,7 +56,16 @@ document.addEventListener('click', e => {
 
 // ── Modals ───────────────────────────────────────────────────────────────────
 function openModal(id)  { document.getElementById(id).style.display = 'flex'; }
-function closeModal(id) { document.getElementById(id).style.display = 'none'; }
+function closeModal(id) {
+  document.getElementById(id).style.display = 'none';
+  if (id === 'practiceModal') {
+    const modal = document.querySelector('.practice-modal');
+    const btn   = document.getElementById('fsBtn');
+    modal.classList.remove('fullscreen');
+    document.getElementById('practiceModal').classList.remove('fs-active');
+    if (btn) { btn.textContent = '⛶ 全螢幕'; btn.title = '全螢幕'; }
+  }
+}
 
 document.querySelectorAll('.modal-overlay').forEach(overlay => {
   overlay.addEventListener('click', e => {
