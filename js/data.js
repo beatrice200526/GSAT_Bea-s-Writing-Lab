@@ -479,8 +479,8 @@ At the time, I resented it bitterly. I remember standing on a step stool to reac
     score: 18,
     scoreBreakdown: { content: 5, organization: 4, language: 5, vocab: 4 },
     tags: ['主題式', '閱讀', '自我成長'],
-    preview: 'If I had to choose one book from the two titles given, I would choose EVERYONE IS BEAUTIFUL...',
-    essay: `If I had to choose one book from the two titles given, I would choose EVERYONE IS BEAUTIFUL: Respect Others and Be Yourself. The title alone holds a quiet kind of challenge. In a world that has become aggressively visual — where appearances are curated, filtered, and ranked by strangers online within seconds — the statement that everyone is beautiful does not feel like a truth. It feels like an argument. And I would choose this book because I want to be argued into believing it.
+    preview: 'If I had to choose one book from the two titles given, I would choose Everyone Is Beautiful...',
+    essay: `If I had to choose one book from the two titles given, I would choose Everyone Is Beautiful: Respect Others and Be Yourself. The title alone holds a quiet kind of challenge. In a world that has become aggressively visual — where appearances are curated, filtered, and ranked by strangers online within seconds — the statement that everyone is beautiful does not feel like a truth. It feels like an argument. And I would choose this book because I want to be argued into believing it.
 
 I am seventeen and attend a school where students are collectively very good at noticing what they lack. I notice it too. There are mornings when I look in the mirror before class and subtract rather than add — cataloguing what is wrong rather than what is present. A book that takes this experience seriously and then dismantles it — offering not empty affirmation but a reasoned case for self-acceptance and genuine respect for others — sounds not like an escape from reality but a guide through it. The title suggests that beauty is not a ranking but a recognition: that to see beauty in everyone requires first learning to stop ranking altogether. That is exactly the kind of thinking I need more of.`,
     annotations: [
@@ -599,7 +599,7 @@ let grammarLessons = [
         tip: ''
       },
       {
-        name: '表個人觀點（Opinion）',
+        name: '表達個人觀點（Opinion）',
         formula: 'As far as I am concerned / From my perspective / Personally / I believe + 句子',
         examples: [
           { en: 'From my perspective, an ideal park should accommodate both types of users.', zh: '從我的角度來看，一個理想的公園應該同時滿足兩類使用者的需求。' },
@@ -789,7 +789,7 @@ let grammarLessons = [
         formula: 'Although + 子句, 主要子句.',
         examples: [
           { en: 'Although technology has its drawbacks, its benefits far outweigh the risks.', zh: '雖然科技有其缺點，但其好處遠超過風險。' },
-          { en: 'Although the trip did not go as planned, it turned out to be memorable.', zh: '雖然這次旅行不如計劃，但事後証明它令人難忘。' }
+          { en: 'Although the trip did not go as planned, it turned out to be memorable.', zh: '雖然這次旅行不如計劃，但事後證明它令人難忘。' }
         ],
         tip: '注意：although 和 but 不能同時使用在同一個句子中'
       },
@@ -927,7 +927,7 @@ let grammarLessons = [
         name: '開頭技法②：場景式開場（Vivid Scene）',
         formula: 'It was + [時間/地點]. + [一個生動的具體事件]. + [一句反思或轉折].',
         examples: [
-          { en: 'It was an ordinary Tuesday morning. A line stretched around the corner of the newly opened café, and nobody seemed to know exactly why they were standing in it. That was the moment I began to wonder whether we queue for the thing itself, or for the story of having gotten it.', zh: '那是一個平凡的星期二早晨。一條隊伍繞過了剛開幕咖啡廳的轉角，而似乎沒有人確切知道自己為什麼站在這裡。就在那一刻，我開始思考：我們排隊是為了得到那個東西本身，還是為了「得到它的故事」？' },
+          { en: 'It was an ordinary Tuesday morning. A line stretched around the block outside the newly opened café, and nobody seemed to know exactly why they were standing in it. That was the moment I began to wonder whether we queue for the thing itself, or for the story of having gotten it.', zh: '那是一個平凡的星期二早晨。一條隊伍延伸到剛開幕咖啡廳外的整條街，而似乎沒有人確切知道自己為什麼站在這裡。就在那一刻，我開始思考：我們排隊是為了得到那個東西本身，還是為了「得到它的故事」？' },
           { en: 'It was the thirty-eighth try at the claw machine. My sister had refused to give up. When the crane finally lifted the small dinosaur free, she turned to me with a look that had nothing to do with the toy.', zh: '那是第三十八次嘗試抓娃娃機。妹妹拒絕放棄。當夾子終於把那隻小恐龍夾起來時，她轉過頭看著我，那個表情和那個玩具毫無關係。' }
         ],
         tip: '場景式開場要「具體」——不是「有一天」而是「那是個平凡的星期二早晨」，細節讓讀者瞬間身臨其境'
@@ -1040,13 +1040,13 @@ need       →  require / demand / call for`,
       {
         name: '形容詞升級',
         formula: `good       →  outstanding / admirable / remarkable
-bad        →  harmful / negative / damaging / destructive
+bad        →  detrimental / harmful / adverse / destructive
 important  →  crucial / vital / significant / essential
 big        →  substantial / considerable / enormous / profound
 clear      →  evident / apparent / undeniable / obvious
 common     →  prevalent / widespread / typical / familiar
 true/real  →  genuine / authentic / undeniable / real
-new        →  innovative / novel / fresh / modern
+new        →  innovative / novel / groundbreaking / unprecedented
 hard       →  challenging / demanding / difficult / tough
 different  →  distinct / diverse / contrasting / varied`,
         examples: [
@@ -1061,7 +1061,7 @@ different  →  distinct / diverse / contrasting / varied`,
 really        →  genuinely / truly / actually / deeply
 quickly       →  rapidly / swiftly / promptly
 slowly        →  gradually / steadily / progressively
-often         →  frequently / consistently / regularly / repeatedly
+often         →  frequently / consistently / regularly / persistently
 clearly       →  evidently / apparently / obviously / notably
 suddenly      →  abruptly / unexpectedly
 especially    →  particularly / specifically / notably / in particular`,

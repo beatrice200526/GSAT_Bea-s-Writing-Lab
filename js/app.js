@@ -380,7 +380,7 @@ function getFcCard()  { return getFcDeck().cards[fcOrder[fcIndex]]; }
 function initFlashcards() {
   // Build ordered index array (sequential on first load)
   const deck = getFcDeck();
-  if (fcOrder.length !== deck.cards.length || fcDeckId !== fcDeckId) {
+  if (fcOrder.length !== deck.cards.length || fcOrder.length === 0) {
     fcOrder = deck.cards.map((_, i) => i);
   }
   fcIndex   = 0;
