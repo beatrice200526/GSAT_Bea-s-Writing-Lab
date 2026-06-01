@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bea's Writing Lab</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-brand">
+      <span class="brand-icon">✍</span>
+      <span class="brand-text">Bea's Writing Lab</span>
+    </div>
+    <ul class="nav-links">
+      <li><a class="nav-link active" data-section="home">首頁</a></li>
+      <li><a class="nav-link" data-section="guide">考試指南</a></li>
+      <li><a class="nav-link" data-section="practice">題庫練習</a></li>
+      <li><a class="nav-link" data-section="writing-guide">寫作解析</a></li>
+      <li><a class="nav-link" data-section="essays">範文欣賞</a></li>
+      <li><a class="nav-link" data-section="grammar">文法教學</a></li>
+      <li><a class="nav-link" data-section="flashcards">閃卡練習</a></li>
+    </ul>
+    <button class="menu-btn" id="menuBtn">☰</button>
+  </nav>
+
+  <main>
+    <!-- HOME -->
+    <section id="home" class="section active">
+      <div class="hero">
+        <div class="hero-content">
+          <div class="hero-badge">台灣學測・指考英文作文</div>
+          <h1 class="hero-title">寫出高分作文<br>從練習開始</h1>
+          <p class="hero-subtitle">完整題庫 × 高分範文 × 文法攻略<br>涵蓋學測引導寫作與指考英文作文全面訓練</p>
+          <div class="hero-actions">
+            <button class="btn-primary" onclick="navigate('practice')">開始練習</button>
+            <button class="btn-outline" onclick="navigate('essays')">瀏覽範文</button>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="exam-highlight-card">
+            <div class="exam-highlight-badge">📋 學測英文作文考試重點</div>
+            <div class="exam-highlight-list">
+              <div class="exam-highlight-item">
+                <div class="exam-highlight-num">100</div>
+                <div>
+                  <div class="exam-highlight-label">分鐘</div>
+                  <div class="exam-highlight-desc">英文科整體考試時間</div>
+                </div>
+              </div>
+              <div class="exam-highlight-item">
+                <div class="exam-highlight-num">20</div>
+                <div>
+                  <div class="exam-highlight-label">分（作文滿分）</div>
+                  <div class="exam-highlight-desc">4 項評分，各項最高 5 分，獨立計算</div>
+                </div>
+              </div>
+              <div class="exam-highlight-item">
+                <div class="exam-highlight-num">45</div>
+                <div>
+                  <div class="exam-highlight-label">分鐘（建議作答時間）</div>
+                  <div class="exam-highlight-desc">目標 14 分以上，至少寫一頁半</div>
+                </div>
+              </div>
+            </div>
+            <div class="exam-highlight-divider"></div>
+            <div class="exam-highlight-tags">
+              <span>看圖寫作</span>
+              <span>論說文</span>
+              <span>主題式寫作</span>
+              <span>信函寫作</span>
+              <span>混合題</span>
+              <span>圖表寫作</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="features">
+        <div class="features-title">平台特色</div>
+        <div class="features-grid">
+          <div class="feature-card" onclick="navigate('practice')">
+            <div class="feature-icon">📝</div>
+            <h3>歷年題庫練習</h3>
+            <p>收錄近年學測・指考作文題目，含計時模式，還原考場情境</p>
+          </div>
+          <div class="feature-card" onclick="navigate('essays')">
+            <div class="feature-icon">🏆</div>
+            <h3>高分範文賞析</h3>
+            <p>學測・指考歷年佳作，附寫作技巧解析與直通大考中心連結</p>
+          </div>
+          <div class="feature-card" onclick="navigateToTimer()">
+            <div class="feature-icon">⏱</div>
+            <h3>計時練習模式</h3>
+            <p>內建 40 / 45 分鐘計時器，模擬真實考場節奏，強化時間管理</p>
+          </div>
+          <div class="feature-card" onclick="navigate('grammar')">
+            <div class="feature-icon">📚</div>
+            <h3>文法句型攻略</h3>
+            <p>學測高頻句型、轉折語、分詞構句等系統整理</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Guide teaser -->
+      <div class="guide-teaser" onclick="navigate('guide')">
+        <span class="guide-teaser-icon">📋</span>
+        <div>
+          <div class="guide-teaser-title">學測英文作文考試指南</div>
+          <div class="guide-teaser-sub">評分標準、題型分析、高分策略 — 點此查看完整介紹</div>
+        </div>
+        <span class="guide-teaser-arrow">→</span>
+      </div>
+    </section>
+
+    <!-- GUIDE -->
+    <section id="guide" class="section">
+      <div class="section-header">
+        <h2>考試指南</h2>
+        <p>學測英文作文評分標準、題型介紹與高分策略全攻略</p>
+      </div>
+
+      <div class="scoring-guide">
+        <div class="scoring-guide-header">
+          <h2>學測英文作文評分標準</h2>
+          <button class="btn-outline" style="font-size:0.85rem;padding:0.4rem 1rem" onclick="openFullRubric()">📊 完整評分表</button>
+        </div>
+        <div class="criteria-grid">
+          <div class="criterion">
+            <div class="criterion-icon">💡</div>
+            <h4>內容 Content</h4>
+            <p>切題程度、想法是否充分發展、細節是否具體</p>
+            <div class="criterion-score">0–5 分</div>
+            <button class="criterion-detail-btn" onclick="openCriterionDetail('content')">詳細說明 →</button>
+          </div>
+          <div class="criterion">
+            <div class="criterion-icon">🔗</div>
+            <h4>組織 Organization</h4>
+            <p>段落結構、邏輯連貫性、首尾呼應</p>
+            <div class="criterion-score">0–5 分</div>
+            <button class="criterion-detail-btn" onclick="openCriterionDetail('org')">詳細說明 →</button>
+          </div>
+          <div class="criterion">
+            <div class="criterion-icon">✏️</div>
+            <h4>文法、句構 Grammar</h4>
+            <p>文法正確性、句型多樣性、語意清晰度</p>
+            <div class="criterion-score">0–5 分</div>
+            <button class="criterion-detail-btn" onclick="openCriterionDetail('lang')">詳細說明 →</button>
+          </div>
+          <div class="criterion">
+            <div class="criterion-icon">📖</div>
+            <h4>字彙、拼字 Vocabulary</h4>
+            <p>用字準確、字彙豐富度、拼字與標點符號</p>
+            <div class="criterion-score">0–5 分</div>
+            <button class="criterion-detail-btn" onclick="openCriterionDetail('vocab')">詳細說明 →</button>
+          </div>
+        </div>
+
+        <!-- Accordion -->
+        <div class="scoring-accordion">
+          <h2 class="scoring-accordion-title">學測英文作文基本認識與介紹</h2>
+
+          <div class="accordion-section">
+            <button class="accordion-toggle" onclick="toggleAccordion(this)">
+              <span>📌 基本認識：考試時間與分數</span>
+              <span class="accordion-arrow">›</span>
+            </button>
+            <div class="accordion-body">
+              <div class="intro-content">
+                <div class="intro-highlight">
+                  <strong>⏰ 考試時間：</strong>英文科（選擇＋手寫）＋英文作文 共 <strong>100 分鐘</strong>，建議預留 <strong>40–45 分鐘</strong>給英文作文。
+                </div>
+                <div class="intro-stats-row">
+                  <div class="intro-stat">
+                    <div class="intro-stat-num">20</div>
+                    <div class="intro-stat-label">作文滿分</div>
+                  </div>
+                  <div class="intro-stat">
+                    <div class="intro-stat-num">4</div>
+                    <div class="intro-stat-label">評分項目</div>
+                  </div>
+                  <div class="intro-stat">
+                    <div class="intro-stat-num">14+</div>
+                    <div class="intro-stat-label">建議目標分數</div>
+                  </div>
+                </div>
+                <p>📌 與國文作文不同，採<strong>獨立計算</strong>方式，不影響英文總級分。作文是一項必備的英文硬實力。</p>
+                <p>🎯 建議練習分數盡量達到 <strong>14 分以上</strong>。</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-section">
+            <button class="accordion-toggle" onclick="toggleAccordion(this)">
+              <span>🔥 學測英文作文拿高分策略</span>
+              <span class="accordion-arrow">›</span>
+            </button>
+            <div class="accordion-body">
+              <div class="intro-content">
+                <h3>📝 文章內容</h3>
+                <ul>
+                  <li>切合主題</li>
+                  <li>文章脈絡清晰，自然與流暢</li>
+                  <li>用句組詞正確清晰，不宜過於刻意</li>
+                  <li>轉折語與連接詞的運用</li>
+                  <li>時態的變化與連貫性</li>
+                  <li>邏輯思考</li>
+                  <li>個人觀點</li>
+                </ul>
+                <h3>⏰ 時間掌控</h3>
+                <ul>
+                  <li>建議預留給作文約 40–45 分鐘</li>
+                </ul>
+                <h3>📄 文章長度</h3>
+                <ul>
+                  <li>至少一頁半</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-section">
+            <button class="accordion-toggle" onclick="toggleAccordion(this)">
+              <span>🔎 作文題型分析</span>
+              <span class="accordion-arrow">›</span>
+            </button>
+            <div class="accordion-body">
+              <div class="intro-content">
+                <div class="type-cards">
+                  <div class="type-card">
+                    <h4>看圖寫作 Single / Multi-Image</h4>
+                    <ul>
+                      <li>1～4 幅插圖（常見 2–3 格）</li>
+                      <li>第一段：描述圖片、推論人物心情</li>
+                      <li>第二段：延續故事、發表感想或建議</li>
+                      <li>重點：敘事技巧、時間順序、過渡詞</li>
+                    </ul>
+                  </div>
+                  <div class="type-card">
+                    <h4>論說文 Argumentative Essay</h4>
+                    <ul>
+                      <li>社會現象或問題討論，明確主題</li>
+                      <li>第一段：問題背景、確立論點</li>
+                      <li>第二段：個人觀點、自身經驗</li>
+                      <li>重點：明確立場，避免前後矛盾</li>
+                    </ul>
+                  </div>
+                  <div class="type-card">
+                    <h4>主題式寫作 Topic-based</h4>
+                    <ul>
+                      <li>明確主題，與時事、日常生活相關</li>
+                      <li>第一段：客觀描述主題背景</li>
+                      <li>第二段：主觀思考、個人感想</li>
+                      <li>重點：緊扣主題，勿離題</li>
+                    </ul>
+                  </div>
+                  <div class="type-card">
+                    <h4>信函寫作 Letter</h4>
+                    <ul>
+                      <li>開頭：稱呼與問候（Dear / To sb.）</li>
+                      <li>正文：關心近況、提出勸告或建議</li>
+                      <li>結語：Yours sincerely</li>
+                      <li>重點：格式正確、不用真實姓名</li>
+                    </ul>
+                  </div>
+                  <div class="type-card">
+                    <h4>混合題 Combined Type</h4>
+                    <ul>
+                      <li>看圖寫作＋主題式／論說文</li>
+                      <li>第一段：客觀描述圖片</li>
+                      <li>第二段：主題式思考</li>
+                      <li>重點：先看清楚圖畫再找出兩個任務</li>
+                    </ul>
+                  </div>
+                  <div class="type-card">
+                    <h4>圖表寫作 Chart-analyzing</h4>
+                    <ul>
+                      <li>較少出現（取自指考題型）</li>
+                      <li>第一段：分析圖表內容與趨勢</li>
+                      <li>第二段：個人觀點、自身經驗</li>
+                      <li>重點：引用圖表數據佐證（e.g. <em>The chart illustrates…</em>）</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRACTICE -->
+    <section id="practice" class="section">
+      <div class="section-header">
+        <h2>題庫練習</h2>
+        <p>選擇題目，開啟計時器，手寫練習作文。涵蓋學測與指考歷年英文作文題目。</p>
+      </div>
+      <div class="question-grid" id="questionGrid"></div>
+
+      <!-- Standalone Timer -->
+      <div class="standalone-timer-section" id="practiceTimerSection">
+        <div class="standalone-timer-label">⏱ 計時練習</div>
+        <div class="standalone-timer-sub">選擇時間，開始計時，模擬考場節奏，強化時間管理</div>
+        <div class="timer-choice-row">
+          <button class="timer-choice-btn active" id="saTimer40Btn" onclick="setSaTimerDuration(40)">40 分鐘</button>
+          <button class="timer-choice-btn" id="saTimer45Btn" onclick="setSaTimerDuration(45)">45 分鐘</button>
+        </div>
+        <div class="timer-main" id="saTimerDisplay">40:00</div>
+        <div class="timer-controls">
+          <button class="btn-outline" id="saToggleTimerBtn" onclick="toggleSaTimer()">開始計時</button>
+          <button class="btn-ghost" onclick="resetSaTimer()">重置</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- WRITING GUIDE -->
+    <section id="writing-guide" class="section">
+      <div class="section-header">
+        <h2>寫作解析</h2>
+        <p>歷年學測・指考作文解題策略，段落架構與高分技巧全面整理</p>
+      </div>
+      <div id="writingGuideContent"></div>
+    </section>
+
+    <!-- ESSAYS -->
+    <section id="essays" class="section">
+      <div class="section-header">
+        <h2>範文欣賞</h2>
+        <p>大考中心歷年英文作文佳作，學測與指考分區呈現</p>
+      </div>
+      <div id="essayGrid"></div>
+    </section>
+
+    <!-- GRAMMAR -->
+    <section id="grammar" class="section">
+      <div class="section-header">
+        <h2>文法教學</h2>
+        <p>學測高頻句型與寫作必備文法</p>
+      </div>
+      <div class="grammar-tabs" id="grammarTabs"></div>
+      <div class="grammar-content" id="grammarContent"></div>
+    </section>
+
+    <!-- FLASHCARDS -->
+    <section id="flashcards" class="section">
+      <div class="section-header">
+        <h2>閃卡練習</h2>
+        <p>點擊卡片翻面，背誦常用寫作單字與句型</p>
+      </div>
+
+      <div class="fc-deck-tabs" id="fcDeckTabs"></div>
+
+      <div class="fc-progress-wrap" id="fcProgressWrap">
+        <div class="fc-progress-bar"><div class="fc-progress-fill" id="fcProgressFill"></div></div>
+        <div class="fc-progress-label" id="fcProgressLabel"></div>
+      </div>
+
+      <div class="fc-stage">
+        <div class="fc-card" id="fcCard" onclick="flipFlashcard()">
+          <div class="fc-face fc-front" id="fcFront"></div>
+          <div class="fc-face fc-back" id="fcBack"></div>
+        </div>
+      </div>
+
+      <div class="fc-hint" id="fcHint">點擊卡片查看答案 ↕</div>
+
+      <div class="fc-controls">
+        <button class="fc-ctrl-btn" onclick="prevCard()">← 上一張</button>
+        <button class="fc-ctrl-btn fc-shuffle-btn" onclick="shuffleDeck()" title="隨機排序">🔀 洗牌</button>
+        <button class="fc-ctrl-btn fc-ctrl-primary" onclick="nextCard()">下一張 →</button>
+      </div>
+
+      <div class="fc-keyboard-hint">← → 方向鍵換卡 ・ 空白鍵翻面</div>
+    </section>
+  </main>
+
+  <!-- PRACTICE MODAL -->
+  <div id="practiceModal" class="modal-overlay" style="display:none">
+    <div class="modal practice-modal">
+      <div class="modal-header">
+        <div>
+          <h3 id="modalTitle">作文練習</h3>
+          <div class="modal-meta" id="modalMeta"></div>
+        </div>
+        <button class="close-btn" onclick="closeModal('practiceModal')">✕</button>
+      </div>
+      <div class="modal-body">
+        <!-- Question prompt -->
+        <div class="prompt-box" id="promptBox"></div>
+        <!-- Timer section -->
+        <div class="timer-section">
+          <div class="timer-hint">📝 請準備紙筆，在紙上作答</div>
+          <div class="timer-choice-row">
+            <button class="timer-choice-btn active" id="timer40Btn" onclick="setTimerDuration(40)">40 分鐘</button>
+            <button class="timer-choice-btn" id="timer45Btn" onclick="setTimerDuration(45)">45 分鐘</button>
+          </div>
+          <div class="timer-main" id="timerDisplay">40:00</div>
+          <div class="timer-controls">
+            <button class="btn-outline" id="toggleTimerBtn" onclick="toggleTimer()">開始計時</button>
+            <button class="btn-ghost" onclick="resetTimer()">重置</button>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn-ghost" onclick="closeModal('practiceModal')">關閉</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ESSAY MODAL -->
+  <div id="essayModal" class="modal-overlay" style="display:none">
+    <div class="modal essay-modal">
+      <div class="modal-header">
+        <h3 id="essayModalTitle">範文</h3>
+        <button class="close-btn" onclick="closeModal('essayModal')">✕</button>
+      </div>
+      <div class="modal-body" id="essayModalBody"></div>
+      <div class="modal-footer">
+        <button class="btn-ghost" onclick="closeModal('essayModal')">關閉</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- CRITERION DETAIL MODAL -->
+  <div id="criterionModal" class="modal-overlay" style="display:none">
+    <div class="modal rubric-modal">
+      <div class="modal-header">
+        <div class="rubric-modal-header-inner">
+          <span class="icon" id="criterionModalIcon">💡</span>
+          <h3 id="criterionModalTitle">評分標準詳細說明</h3>
+        </div>
+        <button class="close-btn" onclick="closeModal('criterionModal')">✕</button>
+      </div>
+      <div class="modal-body">
+        <div class="rubric-levels" id="rubricLevels"></div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn-ghost" onclick="closeModal('criterionModal')">關閉</button>
+        <button class="btn-outline" style="font-size:0.85rem;padding:0.4rem 1rem" onclick="closeModal('criterionModal');openFullRubric()">查看完整評分表</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- FULL RUBRIC MODAL -->
+  <div id="fullRubricModal" class="modal-overlay" style="display:none">
+    <div class="modal full-rubric-modal">
+      <div class="modal-header">
+        <h3>📊 學測英文作文完整評分標準</h3>
+        <button class="close-btn" onclick="closeModal('fullRubricModal')">✕</button>
+      </div>
+      <div class="modal-body">
+        <div class="full-rubric-table-wrap">
+          <table class="full-rubric-table">
+            <thead>
+              <tr>
+                <th style="min-width:80px">項目</th>
+                <th class="grade-excellent">優<span>5–4 分</span></th>
+                <th class="grade-good">可<span>3 分</span></th>
+                <th class="grade-poor">差<span>2–1 分</span></th>
+                <th class="grade-fail">劣<span>0 分</span></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="rubric-category">💡 內容</td>
+                <td>主題（句）清楚切題，並有具體、完整的相關細節支持。</td>
+                <td>主題不夠清楚或突顯，部分相關敘述發展不全。</td>
+                <td>主題不明，大部分相關敘述發展不全或與主題無關。</td>
+                <td>文不對題或沒寫（凡文不對題或沒寫者，其他各項均以零分計算）。</td>
+              </tr>
+              <tr>
+                <td class="rubric-category">🔗 組織</td>
+                <td>重點分明，有開頭、發展、結尾，前後連貫，轉承語使用得當。</td>
+                <td>重點安排不妥，前後發展比例與轉承語使用欠妥。</td>
+                <td>重點不明、前後不連貫。</td>
+                <td>全文毫無組織或未按提示寫作。</td>
+              </tr>
+              <tr>
+                <td class="rubric-category">✏️ 文法、句構</td>
+                <td>全文幾無文法、格式、標點錯誤，文句結構富變化。</td>
+                <td>文法、格式、標點錯誤少，且未影響文意之表達。</td>
+                <td>文法、格式、標點錯誤多，且明顯影響文意之表達。</td>
+                <td>全文文法錯誤嚴重，導致文意不明。</td>
+              </tr>
+              <tr>
+                <td class="rubric-category">📖 字彙、拼字</td>
+                <td>用字精確、得宜，且幾無拼字、大小寫錯誤。</td>
+                <td>字詞單調、重複，用字偶有不當，少許拼字、大小寫錯誤，但不影響文意之表達。</td>
+                <td>用字、拼字、大小寫錯誤多，明顯影響文意之表達。</td>
+                <td>只寫出或抄襲與題意有關的零碎字詞。</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn-ghost" onclick="closeModal('fullRubricModal')">關閉</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/data.js?v=15"></script>
+  <script src="js/app.js?v=15"></script>
+  <script>
+    const rubricData = {
+      content: {
+        name: '內容 Content',
+        icon: '💡',
+        levels: [
+          { level: '優', score: '5–4 分', desc: '主題（句）清楚切題，並有具體、完整的相關細節支持。', cls: 'excellent' },
+          { level: '可', score: '3 分',   desc: '主題不夠清楚或突顯，部分相關敘述發展不全。', cls: 'good' },
+          { level: '差', score: '2–1 分', desc: '主題不明，大部分相關敘述發展不全或與主題無關。', cls: 'poor' },
+          { level: '劣', score: '0 分',   desc: '文不對題或沒寫（凡文不對題或沒寫者，其他各項均以零分計算）。', cls: 'fail' }
+        ]
+      },
+      org: {
+        name: '組織 Organization',
+        icon: '🔗',
+        levels: [
+          { level: '優', score: '5–4 分', desc: '重點分明，有開頭、發展、結尾，前後連貫，轉承語使用得當。', cls: 'excellent' },
+          { level: '可', score: '3 分',   desc: '重點安排不妥，前後發展比例與轉承語使用欠妥。', cls: 'good' },
+          { level: '差', score: '2–1 分', desc: '重點不明、前後不連貫。', cls: 'poor' },
+          { level: '劣', score: '0 分',   desc: '全文毫無組織或未按提示寫作。', cls: 'fail' }
+        ]
+      },
+      lang: {
+        name: '文法、句構 Grammar',
+        icon: '✏️',
+        levels: [
+          { level: '優', score: '5–4 分', desc: '全文幾無文法、格式、標點錯誤，文句結構富變化。', cls: 'excellent' },
+          { level: '可', score: '3 分',   desc: '文法、格式、標點錯誤少，且未影響文意之表達。', cls: 'good' },
+          { level: '差', score: '2–1 分', desc: '文法、格式、標點錯誤多，且明顯影響文意之表達。', cls: 'poor' },
+          { level: '劣', score: '0 分',   desc: '全文文法錯誤嚴重，導致文意不明。', cls: 'fail' }
+        ]
+      },
+      vocab: {
+        name: '字彙、拼字 Vocabulary',
+        icon: '📖',
+        levels: [
+          { level: '優', score: '5–4 分', desc: '用字精確、得宜，且幾無拼字、大小寫錯誤。', cls: 'excellent' },
+          { level: '可', score: '3 分',   desc: '字詞單調、重複，用字偶有不當，少許拼字、大小寫錯誤，但不影響文意之表達。', cls: 'good' },
+          { level: '差', score: '2–1 分', desc: '用字、拼字、大小寫錯誤多，明顯影響文意之表達。', cls: 'poor' },
+          { level: '劣', score: '0 分',   desc: '只寫出或抄襲與題意有關的零碎字詞。', cls: 'fail' }
+        ]
+      }
+    };
+
+    function openCriterionDetail(key) {
+      const data = rubricData[key];
+      document.getElementById('criterionModalIcon').textContent = data.icon;
+      document.getElementById('criterionModalTitle').textContent = data.name + ' — 評分細則';
+      document.getElementById('rubricLevels').innerHTML = data.levels.map(l => `
+        <div class="rubric-level ${l.cls}">
+          <div class="rubric-level-header">
+            <span class="rubric-level-name">${l.level}</span>
+            <span class="rubric-level-score">${l.score}</span>
+          </div>
+          <div class="rubric-level-desc">${l.desc}</div>
+        </div>
+      `).join('');
+      document.getElementById('criterionModal').style.display = 'flex';
+    }
+
+    function openFullRubric() {
+      document.getElementById('fullRubricModal').style.display = 'flex';
+    }
+
+    function toggleAccordion(btn) {
+      const body  = btn.nextElementSibling;
+      const arrow = btn.querySelector('.accordion-arrow');
+      const isOpen = body.style.display === 'block';
+      body.style.display = isOpen ? 'none' : 'block';
+      arrow.style.transform = isOpen ? '' : 'rotate(90deg)';
+      btn.classList.toggle('open', !isOpen);
+    }
+  </script>
+</body>
+</html>
