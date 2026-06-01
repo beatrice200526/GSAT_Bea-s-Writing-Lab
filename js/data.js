@@ -2,7 +2,7 @@ let questions = [
   {
     id: 1,
     year: '115學測',
-    type: '主題式寫作',
+    type: '混合題',
     exam: '學測',
     title: '以寵物取代子女——一個世代的選擇？',
     desc: '分析年輕世代選擇養寵物而非生育的社會現象，描述圖片內容並發表個人觀點',
@@ -20,7 +20,7 @@ let questions = [
   {
     id: 2,
     year: '114學測',
-    type: '看圖寫作',
+    type: '混合題',
     exam: '學測',
     title: '颱風假的兩種樣貌',
     desc: '觀察兩張對比圖片，描述颱風假中不同身份的人所面對的截然不同處境，並表達個人觀點',
@@ -38,7 +38,7 @@ let questions = [
   {
     id: 3,
     year: '113學測',
-    type: '主題式寫作',
+    type: '混合題',
     exam: '學測',
     title: '牠是我們家的一份子',
     desc: '描述一隻你認識或想像中的寵物，說明人與動物之間的情感連結，並分享寵物對你生活的影響',
@@ -56,7 +56,7 @@ let questions = [
   {
     id: 4,
     year: '112學測',
-    type: '主題式寫作',
+    type: '混合題',
     exam: '學測',
     title: '一個 😊 抵千言？——表情符號與現代溝通',
     desc: '探討表情符號（emoji）在日常溝通中扮演的角色，分析其優缺點並表達個人觀點',
@@ -74,7 +74,7 @@ let questions = [
   {
     id: 5,
     year: '111學測',
-    type: '看圖寫作',
+    type: '混合題',
     exam: '學測',
     title: '理想公園——兩種使用方式',
     desc: '根據兩幅插圖，比較兩組人對公園理想使用方式的不同，並發表個人觀點',
@@ -128,7 +128,7 @@ let questions = [
   {
     id: 8,
     year: '108學測',
-    type: '看圖寫作',
+    type: '主題式寫作',
     exam: '學測',
     title: '撿到了——誠實的代價與回報',
     desc: '根據圖片描述一個拾金不昧的故事，並就誠實與道德選擇表達個人觀點',
@@ -146,7 +146,7 @@ let questions = [
   {
     id: 9,
     year: '107學測',
-    type: '看圖寫作',
+    type: '主題式寫作',
     exam: '學測',
     title: '為什麼大家都在排隊？',
     desc: '根據圖片描述台灣的排隊消費現象，分析人們趨之若鶩的心理，並表達個人觀點',
@@ -182,7 +182,7 @@ let questions = [
   {
     id: 11,
     year: '105學測',
-    type: '主題式寫作',
+    type: '論說文',
     exam: '學測',
     title: '家事，是誰的事？',
     desc: '以個人家庭經驗為出發點，討論家事分工的重要性，並表達對家庭責任與性別平等的看法',
@@ -274,12 +274,12 @@ let questions = [
   },
 
   // 指考
-  { id: 201, year: '110指考', exam: '指考', image: '指考pics/110.png', timeMin: 45 },
-  { id: 202, year: '109指考', exam: '指考', image: '指考pics/109.png', timeMin: 45 },
-  { id: 203, year: '108指考', exam: '指考', image: '指考pics/108.png', timeMin: 45 },
-  { id: 204, year: '107指考', exam: '指考', image: '指考pics/107.png', timeMin: 45 },
-  { id: 205, year: '106指考', exam: '指考', image: '指考pics/106.png', timeMin: 45 },
-  { id: 206, year: '105指考', exam: '指考', image: '指考pics/105.png', timeMin: 45 },
+  { id: 201, year: '110指考', exam: '指考', type: '論說文',     image: '指考pics/110.png', timeMin: 45 },
+  { id: 202, year: '109指考', exam: '指考', type: '論說文',     image: '指考pics/109.png', timeMin: 45 },
+  { id: 203, year: '108指考', exam: '指考', type: '圖表寫作',   image: '指考pics/108.png', timeMin: 45 },
+  { id: 204, year: '107指考', exam: '指考', type: '混合題',     image: '指考pics/107.png', timeMin: 45 },
+  { id: 205, year: '106指考', exam: '指考', type: '主題式寫作', image: '指考pics/106.png', timeMin: 45 },
+  { id: 206, year: '105指考', exam: '指考', type: '論說文',     image: '指考pics/105.png', timeMin: 45 },
 ];
 
 let modelEssays = [
