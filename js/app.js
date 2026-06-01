@@ -27,7 +27,20 @@ function navigate(section) {
 }
 
 document.querySelectorAll('.nav-link').forEach(link => {
-  link.addEventListener('click', () => navigate(link.dataset.section));
+  link.addEventListener('click', () => {
+    navigate(link.dataset.section);
+    document.querySelector('.nav-links').classList.remove('open');
+  });
+});
+
+// Mobile hamburger menu
+const menuBtn = document.getElementById('menuBtn');
+const navLinks = document.querySelector('.nav-links');
+menuBtn.addEventListener('click', () => navLinks.classList.toggle('open'));
+document.addEventListener('click', e => {
+  if (!menuBtn.contains(e.target) && !navLinks.contains(e.target)) {
+    navLinks.classList.remove('open');
+  }
 });
 
 // ── Modals ───────────────────────────────────────────────────────────────────

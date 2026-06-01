@@ -587,8 +587,14 @@ textarea#writingArea:focus { border-color: var(--primary); }
   .hero-title { font-size: 2rem; }
 }
 @media (max-width: 640px) {
-  .navbar { padding: 0 1rem; }
-  .nav-links { display: none; }
+  .navbar { padding: 0 1rem; flex-wrap: wrap; height: auto; min-height: 60px; }
+  .nav-links {
+    display: none; flex-direction: column; width: 100%;
+    background: var(--surface); border-top: 1px solid var(--border);
+    padding: 0.5rem 0;
+  }
+  .nav-links.open { display: flex; }
+  .nav-link { padding: 0.65rem 1rem; width: 100%; }
   .menu-btn { display: block; }
   .section { padding: 1.5rem 1rem 3rem; }
   .features-grid { grid-template-columns: 1fr; }
