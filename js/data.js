@@ -112,48 +112,12 @@ let questions = [
     year: '109學測',
     type: '看圖寫作',
     exam: '學測',
-    title: '伸出援手，還是默然走開？',
-    desc: '根據兩幅圖片，描述目睹他人需要幫助時，選擇伸出援手與選擇漠視的不同場景，並表達個人觀點',
+    title: '週年慶的人潮——那天，我在賣場',
+    desc: '根據兩幅有關某家賣場週年慶的新聞報導圖片，描述場景並想像其中發生的一個事件或故事',
     image: 'question%20pics/109.png',
     prompt: `【寫作任務】
-‧第一段：根據兩幅圖片，描述目睹他人需要幫助時，「伸出援手」與「漠然走開」的兩種反應。
-‧第二段：表達你個人對於是否伸出援手的看法與理由，並可援引自身或他人的相關經驗。
-
-【寫作要求】
-‧字數：120 字以上（建議 150–180 字）
-‧兩段皆需涵蓋，段落清晰`,
-    wordMin: 120, wordSuggest: '150–180', timeMin: 40,
-    tags: ['看圖', '品格教育', '社會責任']
-  },
-  {
-    id: 8,
-    year: '108學測',
-    type: '主題式寫作',
-    exam: '學測',
-    title: '撿到了——誠實的代價與回報',
-    desc: '根據圖片描述一個拾金不昧的故事，並就誠實與道德選擇表達個人觀點',
-    image: 'question%20pics/108.png',
-    prompt: `【寫作任務】
-‧第一段：根據圖片描述一則拾金不昧的故事情節，含人物、地點與事件經過。
-‧第二段：表達你對「誠實」這項美德的看法，並分享一次你自己或他人類似的經驗。
-
-【寫作要求】
-‧字數：120 字以上（建議 150–180 字）
-‧兩段皆需涵蓋，段落清晰`,
-    wordMin: 120, wordSuggest: '150–180', timeMin: 40,
-    tags: ['看圖', '品格教育', '誠信']
-  },
-  {
-    id: 9,
-    year: '107學測',
-    type: '主題式寫作',
-    exam: '學測',
-    title: '為什麼大家都在排隊？',
-    desc: '根據圖片描述台灣的排隊消費現象，分析人們趨之若鶩的心理，並表達個人觀點',
-    image: 'question%20pics/107.png',
-    prompt: `【寫作任務】
-‧第一段：描述你曾見過或經歷過的一次排隊購物經驗（人事時地物）。
-‧第二段：分析人們為何熱衷排隊，並表達你個人對「排隊現象」的看法。
+‧第一段：描述這兩張圖片中所呈現的場景，以及正在發生的狀況或事件。
+‧第二段：敘述該事件（或故事）接下來的發展和結果。
 
 【寫作要求】
 ‧字數：120 字以上（建議 150–180 字）
@@ -162,15 +126,51 @@ let questions = [
     tags: ['看圖', '消費文化', '社會觀察']
   },
   {
+    id: 8,
+    year: '108學測',
+    type: '主題式寫作',
+    exam: '學測',
+    title: '台灣，讓我引以為傲的地方',
+    desc: '身為台灣的一份子，描述兩件最讓你感到驕傲的台灣事物，並說明如何將台灣特色介紹給外國人',
+    image: 'question%20pics/108.png',
+    prompt: `【寫作任務】
+‧第一段：描述兩件最能代表台灣、讓你引以為傲的事物（如：人、事、物、文化、制度等），說明它們的特色與意義。
+‧第二段：說明你會用什麼方式把這些台灣特色介紹給外國人，讓他們更了解台灣。
+
+【寫作要求】
+‧字數：120 字以上（建議 150–180 字）
+‧兩段皆需涵蓋，段落清晰`,
+    wordMin: 120, wordSuggest: '150–180', timeMin: 40,
+    tags: ['主題式', '台灣文化', '自我表達']
+  },
+  {
+    id: 9,
+    year: '107學測',
+    type: '主題式寫作',
+    exam: '學測',
+    title: '排隊現象——一窩蜂的人潮',
+    desc: '以個人、親友的經驗或所見所聞為例，描述一窩蜂式的排隊情形，並說明自己對此現象的心得或感想',
+    image: 'question%20pics/107.png',
+    prompt: `【寫作任務】
+‧第一段：以個人、親友的經驗或所見所聞為例，描述一窩蜂式的「排隊現象」（form a long line）。
+‧第二段：說明自己對此排隊現象的心得或感想。
+
+【寫作要求】
+‧字數：120 字以上（建議 150–180 字）
+‧兩段皆需涵蓋，段落清晰`,
+    wordMin: 120, wordSuggest: '150–180', timeMin: 40,
+    tags: ['主題式', '社會現象', '從眾心理']
+  },
+  {
     id: 10,
     year: '106學測',
     type: '看圖寫作',
     exam: '學測',
     title: '計畫趕不上變化——那次意外的旅程',
-    desc: '根據四幅連環圖片，描述一次家庭出遊遇到塞車的經過，並延伸說明從意外中獲得的領悟',
+    desc: '根據三幅連環圖片，描述一次家庭出遊遇到塞車的經過，並想像第四幅圖片可能的發展，延伸說明從意外中獲得的領悟',
     image: 'question%20pics/106.png',
     prompt: `【寫作任務】
-‧依四格圖片的順序，描述一個家庭外出旅遊卻遇到塞車的故事。
+‧依三格圖片的順序，描述一個家庭外出旅遊卻遇到塞車的故事，並想像第四幅圖片可能的發展。
 ‧在結尾段落，說明你從這次「計畫趕不上變化」中得到的啟發或體悟。
 
 【寫作要求】
@@ -325,11 +325,11 @@ Typhoon days are officially designated to protect the public from danger. Yet th
     scoreBreakdown: { content: 5, organization: 4, language: 5, vocab: 4 },
     tags: ['主題式', '動物', '敘述細膩'],
     preview: 'My family adopted Mochi, a tabby cat, when I was twelve...',
-    essay: `My family adopted Mochi, a tabby cat, when I was twelve. At the time, she was the smallest living thing in our apartment — a handful of grey fur with eyes too large for her face. Seven years later, she is as much a part of our household as any of us, with a personality so distinct that we often joke she owns the place rather than the other way around.
+    essay: `My family adopted Mochi, a tabby cat, when I was twelve. At the time, she was the smallest living thing in our apartment — a handful of gray fur with eyes too large for her face. Seven years later, she is as much a part of our household as any of us, with a personality so distinct that we often joke she owns the place rather than the other way around.
 
 What Mochi has taught me is that the bond between humans and animals is not merely one of utility. She cannot pay bills or help with homework, yet her presence has reshaped the texture of our daily lives. When my parents argue, she finds her way between them and simply sits down, as if to mediate. When I study late into the night, she curls under the lamp on my desk, as if to keep me company. Research confirms what pet owners know intuitively: animals reduce stress, encourage routine, and provide unconditional acceptance that humans rarely offer one another. In a world that increasingly rewards productivity, a cat who simply exists — and loves you for existing — may be the most profound reminder that life holds value beyond achievement.`,
     annotations: [
-      { sentence: 'a handful of grey fur with eyes too large for her face', note: '以誇張細節描寫幼貓，「a handful of grey fur」觸感具體，畫面溫暖自然，開場立即抓住讀者' },
+      { sentence: 'a handful of gray fur with eyes too large for her face', note: '以誇張細節描寫幼貓，「a handful of gray fur」觸感具體，畫面溫暖自然，開場立即抓住讀者' },
       { sentence: 'she owns the place rather than the other way around', note: '以輕鬆幽默的倒裝表達「反客為主」，符合寵物當家主題，語言靈活不死板' },
       { sentence: 'a cat who simply exists — and loves you for existing — may be the most profound reminder that life holds value beyond achievement', note: '破折號插入「and loves you for existing」，哲思收尾昇華主題，結語深刻令人回味' }
     ]
@@ -638,7 +638,7 @@ let grammarLessons = [
         name: '獨立分詞（形容詞/名詞）',
         formula: '形容詞/名詞片語, 主要子句.',
         examples: [
-          { en: 'The mood light and joyful, we set off on our family trip.', zh: '心情輕鬆愉快，我們踏上了家庭旅途。' },
+          { en: 'Our hearts light and joyful, we set off on our family trip.', zh: '心情輕鬆愉快，我們踏上了家庭旅途。' },
           { en: 'Heart pounding, she stepped onto the stage for the first time.', zh: '心跳加速，她第一次踏上了舞台。' }
         ],
         tip: '這是進階句型，置於句首時用逗號隔開主要子句'
@@ -770,7 +770,7 @@ let grammarLessons = [
         name: '結尾語',
         formula: 'Yours sincerely, / With love, / Best regards, + [署名]',
         examples: [
-          { en: 'With love and pride, Beatrice (six months from now)', zh: '帶著愛與驕傲，Beatrice（六個月後的你）' },
+          { en: 'With love and care, Jack / Jill', zh: '帶著愛與關心，Jack / Jill（依題目指定署名）' },
           { en: 'Yours sincerely, Ming', zh: '你真誠的，Ming' }
         ],
         tip: '結尾語後面直接換行寫署名；正式信件用 Yours sincerely，私人信件可用 With love / Best regards'
@@ -1058,7 +1058,7 @@ different  →  distinct / diverse / contrasting / varied`,
       {
         name: '副詞升級',
         formula: `very          →  greatly / deeply / remarkably / considerably
-really        →  genuinely / truly / actually / deeply
+really        →  genuinely / truly / deeply / sincerely
 quickly       →  rapidly / swiftly / promptly
 slowly        →  gradually / steadily / progressively
 often         →  frequently / consistently / regularly / persistently
@@ -1171,7 +1171,7 @@ const flashcardDecks = [
       { front: 'different', frontSub: '形容詞升級', back: 'distinct / diverse / contrasting / varied', backNote: '不同的、多樣的', example: 'The two cultures hold distinct views on the role of family.' },
       // ── 副詞升級 (8) ──
       { front: 'very', frontSub: '副詞升級', back: 'tremendously / profoundly / remarkably / considerably', backNote: '非常地', example: 'The exchange experience profoundly changed my view of the world.' },
-      { front: 'really', frontSub: '副詞升級', back: 'genuinely / truly / undeniably / deeply', backNote: '真正地、確實地', example: 'She was genuinely interested in understanding the problem.' },
+      { front: 'really', frontSub: '副詞升級', back: 'genuinely / truly / deeply / sincerely', backNote: '真正地、確實地', example: 'She was genuinely interested in understanding the problem.' },
       { front: 'quickly', frontSub: '副詞升級', back: 'rapidly / swiftly / promptly', backNote: '迅速地', example: 'Misinformation spreads rapidly across unregulated platforms.' },
       { front: 'slowly', frontSub: '副詞升級', back: 'gradually / steadily / progressively', backNote: '逐漸地', example: 'Public attitudes toward mental health have gradually shifted.' },
       { front: 'often', frontSub: '副詞升級', back: 'frequently / consistently / regularly / persistently', backNote: '經常地', example: 'Students who read consistently outperform their peers in writing.' },
@@ -1370,24 +1370,25 @@ const writingGuides = [
   },
   {
     relatedQId: 9, year: '107 學測', exam: '學測', type: '主題式寫作', typeIcon: '🌱',
-    prompt: '排除難關是生活中常有的體驗，但我們也常看到人們在困境中以一種向上提升的方式克服挑戰。以「排除難關」為主題，寫一篇英文作文，文分兩段。第一段以個人觀察或親身接觸過的具體例子說明排除難關的形式或意象；第二段說明自己已達成或希望未來能達成的目標或狀態。',
+    prompt: '排隊（form a long line）是日常生活中常有的經驗，但我們也常看到民眾因一時好奇或基於嘗鮮心理而出現大排長龍的現象，例如某景點初次開放或媒體介紹某家美食餐廳後，人們便蜂擁而至。請以此種一窩蜂式的「排隊現象」為題，寫一篇英文作文，文分兩段。第一段，以個人、親友的經驗或所見所聞為例，描述這種排隊情形；第二段，說明自己對此現象的心得或感想。',
     structure: [
-      '第一段：舉一個你親身經歷或觀察到的「排除難關」具體例子，說明遭遇什麼困難、如何一步步克服',
-      '第二段：選擇一個意象（階梯、螺旋、橋）來象徵克服困境的過程，說明選擇理由，並連結到你希望達成的目標'
+      '第一段：以個人、親友的經驗或所見所聞為例，描述一次「一窩蜂排隊」的具體情形——在哪裡、為什麼大家蜂擁而至、現場人潮與氣氛如何',
+      '第二段：說明你對這種「排隊現象」的心得或感想——你的看法、反思或評論'
     ],
     tips: [
-      '兩段任務都要完成——第 1 段＝具體事例，第 2 段＝目標與意象詮釋',
-      '意象的選擇要有象徵意義，並充分解釋（不能只說「我選階梯」而不說為什麼）',
-      '兩段之間用銜接句：「This experience made me realize that overcoming obstacles is like…」'
+      '第一段要有具體場景——是排名店美食、限量商品還是新景點？把當下的人潮與氛圍描寫出來',
+      '第二段要表達清楚的個人觀點，可從從眾心理（herd mentality）切入，分析這現象的利弊',
+      '善用描寫人潮與排隊的動詞片語，讓場面生動，避免流水帳'
     ],
-    vocab: '適合意象：spiral（向上螺旋）、staircase（階梯）、bridge（橋）、winding mountain path（山路）'
+    vocab: 'form a long line, flock to, jump on the bandwagon, herd mentality, fear of missing out (FOMO), queue up for hours, novelty-seeking'
   },
   {
     relatedQId: 10, year: '106 學測', exam: '學測', type: '看圖寫作', typeIcon: '📷',
     prompt: '請仔細觀察以下三幅連環圖片的內容，並想像第四幅圖片可能的發展，然後寫出一篇涵蓋每張圖片內容且有完整結局的故事。（圖片主題：交通／搭便車情境——路邊等車、塞車、人群擁擠的場面）',
     structure: [
-      '第一段：描述 3 格圖的場景、動作、人物關係與情緒',
-      '第二段：創作第 4 格——事件如何收尾，加入人物心理感受與反思'
+      '依序鋪陳三格圖的場景、動作、人物關係與情緒，把故事說清楚',
+      '想像並創作第四格的發展——事件如何收尾，加入人物心理感受與反思',
+      '題目只要求寫一篇涵蓋每張圖且有完整結局的故事，並未規定段落數；自然分段、敘事流暢即可'
     ],
     tips: [
       '確認每格的主要動作都有提到，不可跳過任一格',
@@ -1481,7 +1482,7 @@ const writingGuides = [
     ],
     tips: [
       '立場必須明確且貫徹全文',
-      '第一段可先承認反方有道理，再用 However / Nevertheless 轉入自己立場，論述更有說服力',
+      '指考論說文應從頭到尾堅定自己的立場，不必為反方緩頰或兩面討好——理由要明確有力，直接論證自己的觀點',
       '第二段的因應計畫要具體可信（不能只說「我會努力學英文」——要說怎麼做）'
     ],
     vocab: 'English-medium instruction (EMI), academic proficiency, language barrier, immersive learning, competitive edge, adapt to'
@@ -1502,14 +1503,14 @@ const writingGuides = [
   },
   {
     relatedQId: 203, year: '108 指考', exam: '指考', type: '圖表寫作', typeIcon: '📊',
-    prompt: '右表顯示美國 18 至 29 歲青年對不同類別新聞的關注程度（百分比）。請根據此圖表寫一篇英文作文，文長至少 120 個單詞，文分兩段。第一段描述此圖表的主要內容並指出其中最重要的趨勢；第二段則對照你自己比較關注及較不關注的新聞主題分別為何，並說明理由。\n  ‧圖表數據：娛樂新聞 ~66%、社會事件 ~64%、學校教育 ~59%、犯罪新聞 ~58%、地方事件 ~55%',
+    prompt: '右圖（美國青年關注之新聞類別）顯示美國 18 至 29 歲青年對不同類別新聞的關注程度（百分比）。請依據圖表內容寫一篇英文作文，文長至少 120 個單詞，文分兩段。第一段描述圖表內容，並指出關注度較高及較低的類別；第二段則描述在這六個新聞類別中，自己較為關注及較不關注的新聞主題分別為何，並說明理由。\n  ‧圖表數據：環境與天然災害 69%、社會議題 64%、國際事務 59%、娛樂與名人 58%、學校與教育 49%、藝術與文化 30%',
     structure: [
-      '第一段：描述圖表主要趨勢——哪類最高、哪類最低、最顯著的對比是什麼',
-      '第二段：對照你自己的新聞閱讀習慣，說明你最關注和最少關注的類別，並解釋原因'
+      '第一段：描述圖表內容——關注度最高（環境與天然災害）、最低（藝術與文化）的類別，以及最顯著的對比',
+      '第二段：在這六個類別中，說明你自己較為關注和較不關注的新聞主題，並解釋原因'
     ],
     tips: [
-      '第一段必須引用具體數據："According to the chart, approximately 66% of young Americans follow entertainment news…"',
-      '描述趨勢時用圖表語言：the highest/lowest proportion, a significant gap, roughly twice as many',
+      '第一段必須引用具體數據："According to the chart, 69% of young Americans follow news about the environment and natural disasters…"',
+      '描述趨勢時用圖表語言：the highest/lowest proportion, a significant gap, more than twice as many',
       '第二段要有自我反思——你的習慣與圖表相同還是不同？為什麼？',
       '⚠️ 不能只描述圖表數字，第二段的個人觀點是必要的'
     ],
@@ -1517,10 +1518,10 @@ const writingGuides = [
   },
   {
     relatedQId: 204, year: '107 指考', exam: '指考', type: '混合題', typeIcon: '🔀',
-    prompt: '如果你就讀的學校預備舉辦一項社區活動，而目前初步討論到三個方向：（一）提供社區服務、（二）發展才藝技術、（三）手工藝品集資。這三個方向中，你會選擇哪一個？請以此為主題，寫一篇英文作文，文長至少 120 個單詞。文分兩段，第一段說明你的選擇及原因；第二段說明你為這個活動籌備的內容，並說明你的設計理念。',
+    prompt: '你就讀的學校預計辦理一項社區活動，目前師生初步討論出三個方案：（一）提供社區老人服務（如送餐、清掃、陪伴等）；（二）舉辦特色市集（如農產、文創、二手商品等）；（三）舉辦藝文活動（如展出、表演、比賽等）。這三個方案，你會選擇哪一個？請以此為題，寫一篇英文作文，文長至少 120 個單詞。文分兩段，第一段說明你的選擇及原因；第二段說明你認為這個活動應該要有哪些活動內容，並說明設計理由。',
     structure: [
-      '第一段：說明你選哪個活動方向，以及為什麼選這個而非其他兩個',
-      '第二段：具體描述活動的籌備內容（怎麼做、誰參與、需要什麼資源），以及這個活動的設計理念'
+      '第一段：說明你選哪一個方案（社區老人服務／特色市集／藝文活動），以及為什麼選這個而非其他兩個',
+      '第二段：具體描述這個活動應該要有哪些內容（怎麼做、誰參與、需要什麼資源），並說明你的設計理由'
     ],
     tips: [
       '選定後整篇圍繞一個方向，不要三個都提到',
@@ -1531,30 +1532,30 @@ const writingGuides = [
   },
   {
     relatedQId: 205, year: '106 指考', exam: '指考', type: '主題式寫作', typeIcon: '🌱',
-    prompt: '每個人多少都有儲放物品的經驗和方式，當你找到或找不到東西時，也都有各自的處理辦法。請以此為主題，寫一篇英文作文，文長至少 120 個單詞。文分兩段，第一段說明你習慣以何種方式或在何種條件下儲放物品；第二段描述一次你找到或找不到某件物品的事例，說明當時的狀況或心情，以及你後來如何因應或處理。',
+    prompt: '每個人都有覺得寂寞的時刻，也都各自有排解寂寞的經驗和方法。當你感到寂寞時，有什麼人或物可以陪伴你，為你排遣寂寞呢？請以此為主題，寫一篇英文作文，文長至少 120 個單詞。文分兩段，第一段說明你會因為什麼原因或在何種情境下感到寂寞；第二段說明這個人或物如何伴你度過寂寞時光。',
     structure: [
-      '第一段：描述你整理／存放物品的習慣與方式（分類、固定位置、收納工具等）',
-      '第二段：敘述一次具體的「找東西」經驗——找什麼、為什麼找不到／找得到、過程與感受、最後如何解決'
+      '第一段：說明你在什麼原因或情境下會感到寂寞（如離家在外、課業壓力、與朋友疏遠、夜深人靜時等）',
+      '第二段：描述有什麼人或物（家人、朋友、寵物、音樂、書籍等）陪伴你，以及它如何幫你排遣寂寞'
     ],
     tips: [
-      '第一段要有具體細節，不能只說「我很整齊」，要說明你怎麼整理',
-      '第二段的故事要有情感起伏（著急 → 搜尋 → 最後找到或放棄）',
-      '結尾可帶一句改變習慣的決心或反思，增加文章深度'
+      '第一段要把「寂寞的情境」寫得真實具體，讓讀者感同身受，而非空泛說「我有時很寂寞」',
+      '第二段是重點——具體描述這個人／物如何陪伴你、帶來什麼樣的慰藉，可加入一個小片段或故事',
+      '情感描寫要真誠，結尾可帶一句對「陪伴」或「寂寞」的體會'
     ],
-    vocab: 'rummage through, misplace, meticulous organization, frantic search, declutter, designated spot'
+    vocab: 'solitude, companionship, ease one\'s loneliness, find solace in, keep me company, a sense of comfort, cope with loneliness'
   },
   {
     relatedQId: 206, year: '105 指考', exam: '指考', type: '論說文', typeIcon: '💬',
-    prompt: '最近有一則新聞報導，標題為「碩士清潔員（waste collectors with a master\'s degree）」——50 位碩士畢業生應徵某事業單位清潔員職缺，引起各界關注。請就這個主題寫一篇英文作文，文長至少 120 個單詞。文分兩段，第一段說明你觀察到這個現象的成因；第二段則以你的家人（舉例）說明他們為了因應就業市場所做的努力或準備。',
+    prompt: '最近有一則新聞報導，標題為「碩士清潔隊員（waste collectors with a master\'s degree）滿街跑」——某市招考清潔隊員，出現 50 位碩士畢業生報考，引起各界關注。請就這個主題寫一篇英文作文，文長至少 120 個單詞。文分兩段，第一段依據你的觀察說明這個現象的成因；第二段就你如何因應上述現象，具體（舉例）說明你對大學生涯的學習規劃。',
     structure: [
-      '第一段：分析「碩士清潔員」現象的成因（就業市場競爭激烈、學歷通膨、生活現實考量等）',
-      '第二段：舉家人或身邊的人為例，說明他們如何因應就業壓力（轉換跑道、持續進修、調整期望等）'
+      '第一段：依你的觀察分析「碩士清潔員」現象的成因（就業市場競爭激烈、學歷通膨、生活現實考量等）',
+      '第二段：說明你打算如何因應這種就業環境，具體（舉例）規劃自己的大學生涯學習（培養技能、累積實務經驗、跨領域學習等）'
     ],
     tips: [
       '第一段要有「分析性」——挖掘背後的社會／經濟原因，不只描述現象',
-      '第二段的例子要連結第一段論點，不能說了例子卻忘了呼應主題',
-      '保持理性客觀的語氣，可以從積極角度看待（打破學歷迷思、務實選擇）'
+      '第二段要扣緊「自己的大學學習規劃」，舉具體例子（題目問的是你自己，不是家人）',
+      '規劃要務實可行，並回應第一段所點出的就業挑戰'
     ],
-    vocab: 'overqualified, diploma inflation, pragmatic choice, redefine success, competitive labor market, embrace reality'
+    vocab: 'overqualified, diploma inflation, competitive labor market, equip oneself with, hands-on experience, interdisciplinary learning, career planning'
   }
 ];
